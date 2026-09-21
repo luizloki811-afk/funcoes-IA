@@ -1,10 +1,6 @@
 
 :root {
-  --cor-fundo: #5a2147;
-  --cor-principal: #502579;
-  --cor-secundaria: #212333;
-  --cor-destaque: #f18bf1;
-  --cor-texto: #D7F9FF;
+  --cor-fundo: #02163b; --cor-principal: #0401a5b4; --cor-secundaria: #0a2540; --cor-destaque: #098bacaf; --cor-texto: #e2f1ff;
 }
 
 body {
@@ -24,4 +20,29 @@ body {
 }
 
 h1 {
-  color: var(--cor-destaque)
+  color: var(--cor-destaque);
+}
+
+.caixa-alternativas {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.caixa-alternativas button {
+  background-color: var(--cor-secundaria);
+  border: 2px solid var(--cor-destaque);
+  border-radius: 8px;
+  color: var(--cor-texto);
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 14px 18px;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.caixa-alternativas button:hover {
+  background-color: var(--cor-destaque);
+  color: var(--cor-principal);
+  transform: translateY(-2px);
+}
